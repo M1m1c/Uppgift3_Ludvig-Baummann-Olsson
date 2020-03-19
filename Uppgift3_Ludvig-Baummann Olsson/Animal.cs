@@ -35,14 +35,9 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 		}
 		public virtual string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {name}\n" +
-				$"Weight: {weight}\n" +
-				$"Age: {age}");
-
-			return result.ToString();
+			return	$"Name: {name}\n" +
+					$"Weight: {weight}\n" +
+					$"Age: {age}\n"; 
 		}
 
 	}
@@ -58,15 +53,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Is trotting: {IsTrotting}");
-
-			return result.ToString();
+			return base.Stats() + $"Is trotting: {IsTrotting}\n";
 		}
 
 	}
@@ -84,15 +71,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Is hungry: {IsHungry}");
-
-			return result.ToString();
+			return base.Stats() + $"Is hungry: {IsHungry}\n";
 		}
 
 	}
@@ -108,15 +87,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Spikes: {NumberOfSpikes}");
-
-			return result.ToString();
+			return base.Stats() + $"Spikes: {NumberOfSpikes}\n";
 		}
 
 	}
@@ -132,15 +103,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Can dig: {CanDig}");
-
-			return result.ToString();
+			return base.Stats() + $"Can dig: {CanDig}\n";
 		}
 
 	}
@@ -169,15 +132,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Fish eaten: {FishEaten}");
-
-			return result.ToString();
+			return base.Stats() + $"Fish eaten: {FishEaten}\n";
 		}
 
 	}
@@ -191,15 +146,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Leg Lenght: {LegLenght}");
-
-			return result.ToString();
+			return base.Stats() + $"Leg Lenght: {LegLenght}\n";
 		}
 	}
 	class Swan : Bird
@@ -212,15 +159,7 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
 
 		public override string Stats()
 		{
-			var result = new StringBuilder();
-
-			result.AppendLine(
-				$"Name: {Name}\n" +
-				$"Weight: {Weight}\n" +
-				$"Age: {Age}\n" +
-				$"Distance flown: {DistanceFlown}");
-
-			return result.ToString();
+			return base.Stats() + $"Distance flown: {DistanceFlown}\n";
 		}
 	}
 

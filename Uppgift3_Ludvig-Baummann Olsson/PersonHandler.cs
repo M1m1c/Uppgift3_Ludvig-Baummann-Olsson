@@ -9,12 +9,11 @@ namespace Uppgift3_Ludvig_Baummann_Olsson
         {
         }
 
-        private List<Person> personList = new List<Person>();
+        private readonly List<Person> personList = new List<Person>();
         public List<Person> PersonList
         {
             get { return personList; }
         }
-
 
         public void SetAge(Person pers, int age)
         {
